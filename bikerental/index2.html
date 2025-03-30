@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental </title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://db.onlinewebfonts.com/c/a7e3822358f6dcb2f986a68cf24721b2?family=MV+Boli+V1" rel="stylesheet">
+      <style>
+         .button-1 {
+  background-color: #f31c1c;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #f16464;
+}
+      </style>
+   </head>
+
+<body>
+
+    <!--  Navabar here we are creating a navigation bar with some lists and logo at the top of the page, we have few icons like search and like at the right side of the section -->
+
+    <section id="Home">
+         <nav>
+            <div>
+                <img src="images/logo2.png">
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Motorcycles</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Accessories</a></li>
+            </ul>
+
+            <div class="icon">
+
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <a href="ordercard.php"><i class="fa-solid fa-heart"></i></a>
+                <a href="second.php"><i class="fa-solid fa-motorcycle"></i></a>
+                
+            </div>
+            <button class="button-1" role="button" onclick="logout()">LOG OUT</button>
+         </nav>
+
+         <div class="main">
+            <div class="men_text">
+                <h1>Get On A<span>MOTORCYCLE</span><br>Hustle Free!!</h1>
+
+               </div>   
+               
+            
+
+            <div class="main_image">
+                <img src="images/main.png">
+            </div>
+         </div>
+
+         <p>
+            "Welcome to The RevUp Rental, where the open road meets limitless adventure! 
+            Embark on a journey unlike any other as you indulge in the thrill of two-wheel exploration. 
+            Our fleet of top-quality motorcycles awaits, ready to accompany you on unforgettable rides through scenic landscapes and winding highways. 
+            Whether you're a seasoned rider seeking adrenaline-fueled escapades or a novice craving a taste of freedom, we have the perfect ride for you. 
+            Experience the rush, embrace the freedom, and let the road be your guide with The RevUp Rental."
+         </p>
+
+         <div class="main_btn">
+            
+            <a target="_blank"   href="second.php">Rent Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        
+         </div>
+   
+
+       
+
+        
+    </section>
+
+
+
+    <!-- about  here we are creating a about page with an image and a paragraph explaining why a customer should choose us and a button that directs us to the book now page-->
+
+
+
+    <div class="about" id="About">
+         <div class="about_main">
+            <br><br><br>
+
+            <div class="image">
+                <img src="images/about1.jpg">
+            </div>
+
+            <div class="about_text">
+                <h1><span>About</span>Us</h1>
+                <br>
+                <h3>Why Choose Us?</h3>
+                <br>
+                <p>
+                    At RevUp Rental, we're more than just a rental service - we're your gateway to unparalleled motorcycle adventures. 
+                    With a passion for two-wheel exploration and a commitment to excellence, we offer a unique blend of convenience, quality, and expertise that sets us apart.
+                    Why choose us? Because we prioritize your experience above all else. From our meticulously maintained fleet of top-of-the-line motorcycles to our personalized customer service, 
+                    we go above and beyond to ensure that every aspect of your journey exceeds expectations.
+                    At RevUp Rental, safety is our top priority. Each bike in our fleet undergoes rigorous inspections and maintenance to guarantee optimal performance and reliability on the road.
+                    
+                     
+                   
+                </p>
+
+                <a target="_blank"  href="second.php" class="about_btn">Try Now!</a>
+            
+            </div>
+         </div>
+         
+         
+
+    </div>
+
+
+
+   <!--  menu  Here we have the list of the motorcycles we have available for rent with their names, rent per day and the specification we alaso have a button for each section which directs us to the booking page as well-->
+
+   
+   
+
+    <div class="menu" id="Menu">
+        <h1>Our <span>Motorcycles</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+           <div class="menu_image">
+              <img src="images/1.webp">
+           </div>
+
+           <div class="small_card">
+              
+            <i class="fa-solid fa-heart"></i>
+           </div>
+
+           <div class="menu_info">
+
+              <h2>Triumph Bobber</h2>
+              <p>
+                 A torquey 1200cc engine for thrilling rides. Its stripped-back design and adjustable riding position.
+              </p>
+              <h3>$80 per Day</h3>
+              <div class="menu_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+
+           </div>
+        </div>
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="https://www.hdwallpapers.in/download/2018_yamaha_yzf_r1_4k-1280x720.jpg">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>Yamaha R1</h2>
+               <p>
+                The Yamaha R1 is powered by a high-revving 998cc inline-four engine, delivering exhilarating performance. 
+               </p>
+               <h3>$100 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+                <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="images/32.webp">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>RE Classic 350</h2>
+               <p>
+                The RE Classic 350 motorcycle features a refined 293cc liquid-cooled engine, offering a smooth and responsive ride. 
+               </p>
+               <h3>$50 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="images/c.webp">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>BMW 1250Gs </h2>
+               <p>
+                The BMW R 1250 GS Adventure is propelled by a robust 1254cc boxer twin engine, providing ample power and torque.
+               <h3>$150 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="images/d.webp">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>TVS Scooter</h2>
+               <p>
+                TVS scooters are renowned for their fuel efficiency and agile handling, making them ideal for urban commuting.
+               </p> 
+               <h3>$30 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="images/6.webp">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>HD Fat Bob</h2>
+               <p>
+                Harley-Davidson motorcycles are celebrated for their iconic V-twin engines, delivering signature rumble and power. 
+               </p>
+               <h3>$120 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="https://images.thequint.com/thequint%2F2016-02%2F0160bda6-6bf2-4769-8ae8-1d47c03b6a12%2FHimalayan--Hero.jpg?auto=format%2Ccompress&fmt=webp&width=720&w=1200">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2>RE Himalayan</h2>
+               <p>
+                The Royal Enfield Himalayan is equipped with a rugged 411cc single-cylinder engine, tailored for adventure riding. 
+               </p>
+               <h3>$70 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+               
+            </div>
+         </div>
+
+         <div class="menu_card">
+
+            <div class="menu_image">
+               <img src="images/g.webp">
+            </div>
+ 
+            <div class="small_card">
+               
+             <i class="fa-solid fa-heart"></i>
+            </div>
+ 
+            <div class="menu_info">
+ 
+               <h2> Ducati Diavel</h2>
+               <p>
+                The Ducati Diavel boasts a potent 1262cc Testastretta DVT engine, delivering impressive power and torque.
+               </p>
+               <h3>$200 per Day</h3>
+               <div class="menu_icon">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star-half-stroke"></i>
+               </div>
+ 
+               <a target="_blank" href="second.php" class="menu_btn">Rent Now!</a>
+ 
+            </div>
+         </div>
+        </div>
+    </div>
+
+
+
+
+   <!--  gallary This is our gallery presenting more bikes with their names and their specs, we have a button that directs to the booking page as well--> 
+
+
+
+    <div class="gallary" id="Gallary">
+        <h1>Our <span>Gallary</span></h1>
+        <br><br>
+
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                 <img src="images/aag">
+                 <h3>Panigale</h3>
+                 <p>
+                    The Ducati Panigale: a symphony of power, precision, and Italian craftsmanship, redefining the art of sportbike engineering.
+                 </p>
+                 <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+            </div>
+
+
+            <div class="gallary_image">
+                <img src="images/b1g">
+
+                <h3>BMW 1250 Gs</h3>
+                <p>
+                    The BMW R 1250 GS Adventure: a rugged adventurer's companion, blending cutting-edge technology with unstoppable performance on any terrain.
+                </p>
+                <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+           </div>
+
+
+          <div class="gallary_image">
+                <img src="images/cg.jpeg">
+
+                <h3>BMW S1000RR</h3>
+                <p>
+                   The BMW S1000RR: a superbike marvel that fuses blistering speed, razor-sharp handling, and advanced electronics, setting the benchmark for high-performance motorcycles.
+                </p>
+                <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+          </div>
+
+
+           <div class="gallary_image">
+                 <img src="images/dg.jpeg">
+
+                 <h3>Kawasaki ZX 10R</h3>
+                <p>
+                   The Kawasaki ZX-10R: a ferocious superbike that balances raw power with refined agility, delivering adrenaline-fueled performance on both road and track.
+                </p>
+                <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+           </div>
+
+
+           <div class="gallary_image">
+                 <img src="images/eg.jpeg">
+
+                 <h3> Yamaha R15</h3>
+                 <p>
+                    The Yamaha R15: a sleek and agile sportbike designed to ignite the thrill of riding with its perfect blend of performance, style, and affordability.
+                 </p>
+                 <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+           </div>
+
+
+            <div class="gallary_image">
+                 <img src="images/fg.webp">
+
+                 <h3> Kawasaki Z900</h3>
+                 <p>
+                    The Kawasaki Z900: a naked streetfighter embodying a harmonious fusion of exhilarating performance, striking design, and everyday versatility.
+                 </p>
+                 <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+            </div>
+
+
+        <div class="gallary_image">
+            <img src="images/gg.avif">
+    
+            <h3>Honda CBR 650</h3>
+            <p>
+                The Honda CBR650R: a spirited sportbike offering a perfect balance of performance, comfort, and everyday usability, ideal for both thrilling rides and daily commutes.
+            </p>
+            <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+            </div>
+
+            
+
+            <div class="gallary_image">
+                <img src="images/hg">
+        
+                <h3>MV Agusta</h3>
+                <p>
+                    MV Agusta: Exquisite Italian motorcycles renowned for their breathtaking beauty, uncompromising performance, and unparalleled craftsmanship, epitomizing the pinnacle of two-wheeled artistry.
+                </p>
+                <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+                </div>
+
+                
+
+                <div class="gallary_image">
+                    <img src="images/ig.webp">
+            
+                    <h3>RE Classic 350</h3>
+                    <p>
+                        The Royal Enfield Classic 350: A timeless icon blending vintage charm with modern reliability, beckoning riders to embark on nostalgic journeys through its enduring design and thumping heart.
+                    </p>
+                    <a target="_blank" href="second.php" class="gallary_btn">Rent Now!</a>
+                    </div>
+            
+        </div>
+    </div>
+
+  
+
+
+
+
+   <!--  Review  We have some of our customer reviews here with their social media handles-->
+
+
+   <div class="review" id="Review">
+      <h1>Customer <span>Review</span></h1>
+
+       
+      <div class="review_box">
+         <div class="review_card">
+
+            <div class="review_profile">
+                <img src="images/rb.webp">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Valentino Rossi</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Absolutely stellar experience renting from RevUp Rental. The staff were incredibly helpful,
+                     guiding me through the rental process and ensuring I got the perfect bike for my trip. 
+                    The motorcycle itself was in pristine condition, making for a worry-free ride. 
+                    I'll definitely be returning for my next adventure."
+                </p>
+            </div>
+         </div>
+         
+
+
+
+         <div class="review_card">
+
+            <div class="review_profile">
+                <img src="images/ddr.webp">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Mary William</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Renting with RevUp Rental was seamless from start to finish. 
+                    Their diverse selection of bikes catered to my preferences,
+                     and the rental rates were fair. I had a blast exploring on their well-maintained motorcycle and would highly recommend them to fellow riders."
+                </p>
+            </div>
+         </div>
+
+
+
+
+         <div class="review_card">
+
+            <div class="review_profile">
+                <img src="images/ccr.webp">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Jorge Martin</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Exceptional service and top-notch bikes at RevUp Rental. 
+                    The team went above and beyond to accommodate my needs, and the rental process was quick and efficient. 
+                    Riding their motorcycle added an extra layer of excitement to my trip, and I'll be coming back for more adventures in the future."
+                </p>
+            </div>
+         </div>
+
+
+
+
+         <div class="review_card">
+
+            <div class="review_profile">
+                <img src="images/er.webp">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">Rebecca</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    "Couldn't have asked for a better experience renting from RevUp Rental.
+                     The staff were friendly, knowledgeable, and made me feel confident about my choice of motorcycle. 
+                    Riding through scenic routes on their reliable bike made my vacation unforgettable. Five stars all around!"
+                </p>
+            </div>
+         </div>
+
+         
+      </div>
+
+   </div>
+
+
+               <!--  additional accessories These are our additional accessories that we provide with pictures and their importance  -->
+
+               <div class="add" id="Order">
+
+                <h1>Additional <span>Accessories</span></h1>
+            
+                  <div class="addbox">
+                      <div class="things">
+                          <img src="images/helmet2.jpeg">
+            
+                          <div class="info">
+                               <h2 class="name">Safety helmets</h2>
+                               <p class="bio"> This helmet is a sturdy, impact-resistant headgear designed to protect riders.</p>
+                      </div>
+                    </div>
+    
+                    <div class="things">
+                        <img src="images/rg.webp">
+          
+                        <div class="info">
+                             <h2 class="name">Riding Jacket</h2>
+                             <p class="bio"> Riding jackets are essential for motorcycle enthusiasts, providing protection, comfort, and style during rides.</p>
+                    </div>
+                  </div>
+    
+                  <div class="things">
+                    <img src="images/panniers.webp">
+      
+                    <div class="info">
+                         <h2 class="name">Panniers</h2>
+                         <p class="bio"> Panniers are storage bags that attach to the sides of bicycles or motorcycles, offering convenient and secure space.</p>
+                </div>
+              </div>
+    
+              <div class="things">
+                <img src="images/gps.jpeg">
+    
+                <div class="info">
+                     <h2 class="name">Map System</h2>
+                     <p class="bio"> A map provides navigational assistance and route planning tailored to the specific needs and preferences of riders.</p>
+            </div>
+          </div>
+    
+    
+                  </div>
+             </div>
+
+
+    <!-- footer  here we have all the locations quick links contact details our services and our official social media handles-->
+
+
+ 
+   <footer>
+      <div class="footer_main">
+
+         <div class="footer_tag">
+            <h2>Locations</h2>
+            <p>Bonn</p>
+            <p>Dortmund</p>
+            <p>Berlin</p>
+            <p>Frankfurt</p>
+            <p>Stuttgart</p>
+         </div>
+
+         <div class="footer_tag">
+            <h2>Quick Link</h2>
+            <p>Home</p>
+            <p>About</p>
+            <p>Motorcycles</p>
+            <p>Review</p>
+            <p>Rent</p>
+         </div>
+
+         <div class="footer_tag">
+            <h2>Contact</h2>
+            <p>+49 16091481487</p>
+            <p>+49 19645764833</p>
+            <p>johndoe12@gmail.com</p>
+            <p>revuprental@gmail.com</p>
+         </div>
+
+         <div class="footer_tag">
+            <h2>Our Service</h2>
+            <p>Easy Rental</p>
+            <p>Fast Processing</p>
+            <p>24 X 7 Service</p>
+            <p>Quick Pickup</p>
+         </div>
+
+         <div class="footer_tag">
+            <h2>Follow</h2>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+         </div>
+
+      </div>
+
+      <p class="end">Designed by <span> Banujan Makendrakumar <i class="fa-solid fa-thumbs-up"></i></span></p>
+      <p class="rights">&copy; 2024 Banujan Makendrakumar. All rights reserved.</p>
+
+   </footer>
+
+<script>
+function logout() {
+    // Clear session storage or local storage if needed
+    sessionStorage.clear();
+    localStorage.clear();
+    
+    // Redirect to index.html and clear history
+    window.location.replace('index.html');
+
+    // Additional history manipulation to prevent back navigation
+    setTimeout(function() {
+        window.history.pushState(null, null, 'index.html');
+    }, 0);
+}
+
+// Prevent back navigation using popstate event
+window.addEventListener('popstate', function(event) {
+    history.pushState(null, null, 'index.html');
+});
+
+
+</script>
+    
+</body>
+</html> 
