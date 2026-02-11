@@ -880,3 +880,32 @@ footer .rights{
  
 
 
+
+
+section,
+.about,
+.menu,
+.gallary,
+.review,
+.add {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-bottom: 120px;
+    
+}
+
+
+
+
+
+.review {
+    margin-top: 0 !important;
+}
+
+.add {
+    margin-bottom: 0 !important;
+}
+
+
+
