@@ -21,7 +21,7 @@ This website is designed for customers to browse, rent, and book bikes and relat
    - Start **Apache** and **MySQL** from the XAMPP control panel.
 
 3. **Place Project in `htdocs`**  
-   - Copy the project folder into the `htdocs` folder of your XAMPP installation.  
+   - Copy the project folder named bike rental into the `htdocs` folder of your XAMPP installation.  
      Example: `C:\xampp\htdocs\projectname`
 
 4. **Import Database**  
@@ -31,8 +31,9 @@ This website is designed for customers to browse, rent, and book bikes and relat
 5. **Run the Project**  
    - Open your browser and go to:  
      ```
-     http://localhost/projectname/
+     http://localhost/project-foldername-that-is-bikerental/
      ```
+     when the zip folder is downloaded there will be one folder named Bikerental, this is the foldername and this folder has to placed into the htdocs folder.
    - Ensure XAMPP is running and Apache + MySQL are on.
 
 ## Features
